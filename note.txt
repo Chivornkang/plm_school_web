@@ -1,0 +1,85 @@
+Good practice! Here's exactly what to change — just reorganize the folder structure and update the import paths.
+
+New folder structure:
+```
+src/
+├── main.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── components/
+    ├── Loader/
+    │   ├── Loader.jsx
+    │   └── Loader.css
+    ├── Navbar/
+    │   ├── Navbar.jsx
+    │   └── Navbar.css
+    ├── Footer/
+    │   ├── Footer.jsx
+    │   └── Footer.css
+    ├── Home/
+    │   ├── Home.jsx
+    │   └── Home.css
+    ├── About/
+    │   ├── About.jsx
+    │   └── About.css
+    ├── Management/
+    │   ├── Management.jsx
+    │   └── Management.css
+    ├── News/
+    │   ├── News.jsx
+    │   └── News.css
+    └── Contact/
+        ├── Contact.jsx
+        └── Contact.css
+```
+
+Only 2 types of changes needed:
+
+1. Inside each component's `.jsx` — update the CSS import from:
+```js
+import './Loader.css'
+```
+to:
+```js
+import './Loader.css'   // ← stays the same! CSS is in the same folder now
+```
+Actually the CSS import stays identical since the `.css` file sits right next to the `.jsx`. ✅ No change needed inside components.
+
+2. In `App.jsx` — update all component imports from:
+```js
+import Navbar     from './components/Navbar'
+import Footer     from './components/Footer'
+import Home       from './components/Home'
+import About      from './components/About'
+import Management from './components/Management'
+import News       from './components/News'
+import Contact    from './components/Contact'
+import Loader     from './components/Loader'
+```
+to:
+```js
+import Navbar     from './components/Navbar/Navbar'
+import Footer     from './components/Footer/Footer'
+import Home       from './components/Home/Home'
+import About      from './components/About/About'
+import Management from './components/Management/Management'
+import News       from './components/News/News'
+import Contact    from './components/Contact/Contact'
+import Loader     from './components/Loader/Loader'
+```
+
+Tip — use `index.jsx` to keep imports clean:
+
+If you create an `index.jsx` inside each folder that just re-exports the component:
+```js
+// src/components/Navbar/index.jsx
+export { default } from './Navbar'
+```
+
+Then `App.jsx` can stay as the short form and still work:
+```js
+import Navbar from './components/Navbar'   // ← finds index.jsx automatically
+```
+
+That's the cleanest approach used in most production React projects. You only move the files + add `index.jsx` files — nothing else changes.
