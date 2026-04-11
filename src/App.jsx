@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Navbar     from './components/Navbar/Navbar'
 import Footer     from './components/Footer/Footer'
 import Home       from './components/Home/Home'
+import Classes    from './components/Classes/Classes'
 import About      from './components/About/About'
 import Management from './components/Management/Management'
 import News       from './components/News/News'
@@ -29,7 +30,7 @@ export default function App() {
     }, 250)
   }
 
-  const pages = { home: Home, about: About, management: Management, news: News, contact: Contact }
+  const pages = { home: Home,classes:Classes, about: About, management: Management, news: News, contact: Contact }
   const PageComponent = pages[page]
 
   return (

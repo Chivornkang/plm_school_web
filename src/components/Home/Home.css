@@ -97,6 +97,7 @@
 }
 
 .hero-actions {
+margin: 10px ;
   display: flex;
   gap: 0.75rem;
   justify-content: center;
@@ -130,6 +131,7 @@
 }
 .stat-item:hover { transform: translateY(-3px); }
 .stat-num {
+  margin: 5px;
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   font-weight: 700;

@@ -1,10 +1,10 @@
 import './Home.css'
 
 const stats = [
-  { num: '9',   labelEn: 'Teachers',   labelKm: 'គ្រូ' },
-  { num: 'K–6', labelEn: 'Grades',     labelKm: 'ថ្នាក់' },
-  { num: '7',   labelEn: 'Classes',    labelKm: 'ថ្នាក់រៀន' },
-  { num: '100%', labelEn: 'Dedication', labelKm: 'ការឧទ្ទិស' },
+  { num: '១១​ នាក់',   labelEn: 'គ្រូបង្រៀនសររុប',   labelKm: 'ឆ្នាំ​២០២៦' },
+  { num: '៧ ថ្នាក់', labelEn: 'ទី១-ទី៦',     labelKm: 'កម្រិតបឋម' },
+  { num: '៣៣២',   labelEn: 'ថ្នាក់កុមារតូច',    labelKm: 'កម្រិតមត្តេយ្យ' },
+  // { num: '%', labelEn: 'Dedication', labelKm: 'ការឧទ្ទិស' },
 ]
 
 const latestNews = [
@@ -38,16 +38,18 @@ export default function Home({ navigate }) {
             សាលាបឋមសិក្សាប្រឡាយមាស
           </p>
           <p className="hero-tagline animate-up delay-3">
-            Nurturing young minds with knowledge, values, and excellence.<br />
-            <span>ចិញ្ចឹមចិត្តក្មេងៗ ជាមួយចំណេះដឹង គុណធម៌ និងភាពល្អប្រសើរ</span>
+            អប់រំកុមារ ជាមួយចំណេះដឹង គុណធម៌ និងភាពល្អប្រសើរ<br />
+            <span>
+              Nurturing Children with Knowledge, Values, and Excellence.
+            </span>
           </p>
 
           <div className="hero-actions animate-up delay-4">
             <button className="btn btn-gold" onClick={() => navigate('about')}>
-              Learn More &nbsp;→
+              អំពីសាលា &nbsp;→
             </button>
             <button className="btn btn-outline" onClick={() => navigate('contact')}>
-              Contact Us
+              ទំនាក់ទំនង
             </button>
           </div>
         </div>
