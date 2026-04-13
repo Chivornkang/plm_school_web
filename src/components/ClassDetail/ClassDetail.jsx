@@ -19,7 +19,7 @@ export default function ClassDetail({ cls, lang, onBack }) {
       </button>
 
       {/* ── Hero ── */}
-      <div className="cd-hero">
+      {/* <div className="cd-hero">
         <div className="cd-hero-emoji">{cls.emoji}</div>
         <div className="cd-hero-text">
           <h2 className="cd-hero-grade">{t(cls.grade, cls.gradeKh)}</h2>
@@ -29,7 +29,7 @@ export default function ClassDetail({ cls, lang, onBack }) {
             <span className="cd-chip">👩‍🏫 {t(cls.teacher.name, cls.teacher.nameKh)}</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ── Tab bar ── */}
       <div className="cd-tab-bar">

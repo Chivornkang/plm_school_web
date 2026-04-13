@@ -58,9 +58,9 @@ export default function Classes() {
             <div className="stats-row">
               <div className="stat"><span className="stat-n">6</span><span className="stat-l">{t("Grades","ថ្នាក់ទី")}</span></div>
               <div className="stat-div"/>
-              <div className="stat"><span className="stat-n">171</span><span className="stat-l">{t("Students","សិស្ស")}</span></div>
+              <div className="stat"><span className="stat-n">332</span><span className="stat-l">{t("Students","សិស្ស")}</span></div>
               <div className="stat-div"/>
-              <div className="stat"><span className="stat-n">6</span><span className="stat-l">{t("Teachers","គ្រូ")}</span></div>
+              <div className="stat"><span className="stat-n">11</span><span className="stat-l">{t("Teachers","គ្រូ")}</span></div>
             </div>
           </header>
 

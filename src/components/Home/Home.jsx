@@ -74,7 +74,7 @@ export default function Home({ navigate }) {
           <div className="section-header animate-up">
             <p className="badge">Latest Updates</p>
             <h2 className="section-title" style={{marginTop:'0.5rem'}}>
-              News &amp; Events
+              News + Events
             </h2>
             <p className="section-subtitle">ព័ត៌មានថ្មីៗ និងព្រឹត្តិការណ៍សាលា</p>
             <div className="gold-line" />
