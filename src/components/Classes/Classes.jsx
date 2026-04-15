@@ -9,11 +9,11 @@ function ClassCard({ cls, lang, onClick }) {
   return (
     <button className="cc-card" style={{ "--cc": cls.color }} onClick={onClick}>
       <div className="cc-emoji">
-        {/* <img src={teacher.avatar} alt="teacher" class="tc-pf"/> */}
+        { <h2 className="cc-grade">{t(cls.grade, cls.gradeKh)}</h2>}
       </div>
       <div className="cc-body">
-        <h2 className="cc-grade">{t(cls.grade, cls.gradeKh)}</h2>
-        <p className="cc-teacher">{t(cls.teacher.name, cls.teacher.nameKh)}</p>
+        <h2 className="cc-grade">{t(cls.teacher.name, cls.teacher.nameKh)}</h2>
+        {/* <p className="cc-teacher">{t(cls.teacher.name, cls.teacher.nameKh)}</p> */}
         <div className="cc-chips">
           <span className="cc-chip">{t(cls.room, cls.roomKh)}</span>
           <span className="cc-chip">👦 {cls.monthlyResults[0]?.students?.length ?? "—"} {t("students","សិស្ស")}</span>
@@ -58,9 +58,9 @@ export default function Classes() {
             <div className="stats-row">
               <div className="stat"><span className="stat-n">6</span><span className="stat-l">{t("Grades","ថ្នាក់ទី")}</span></div>
               <div className="stat-div"/>
-              <div className="stat"><span className="stat-n">171</span><span className="stat-l">{t("Students","សិស្ស")}</span></div>
+              <div className="stat"><span className="stat-n">332</span><span className="stat-l">{t("Students","សិស្ស")}</span></div>
               <div className="stat-div"/>
-              <div className="stat"><span className="stat-n">6</span><span className="stat-l">{t("Teachers","គ្រូ")}</span></div>
+              <div className="stat"><span className="stat-n">11</span><span className="stat-l">{t("Teachers","គ្រូ")}</span></div>
             </div>
           </header>
 

@@ -71,7 +71,7 @@
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+ font-family: "DM Sans", sans-serif;
   font-size: clamp(1.6rem, 5vw, 2.8rem);
   color: var(--gold-light);
   line-height: 1.25;
@@ -132,7 +132,7 @@ margin: 10px ;
 .stat-item:hover { transform: translateY(-3px); }
 .stat-num {
   margin: 5px;
-  font-family: 'Playfair Display', serif;
+font-family: "DM Sans", sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   font-weight: 700;
   color: var(--gold-light);
@@ -182,7 +182,7 @@ margin: 10px ;
   flex-direction: column;
 }
 .news-title {
-  font-family: 'Playfair Display', serif;
+font-family: "DM Sans", sans-serif;
   font-size: 1rem;
   color: var(--white);
   margin-bottom: 0.2rem;

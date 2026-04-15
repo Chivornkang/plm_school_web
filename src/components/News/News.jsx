@@ -26,7 +26,7 @@ export default function News() {
         <div className="page-hero-bg" />
         <div className="container">
           <span className="badge animate-up">Updates / ព័ត៌មាន</span>
-          <h1 className="page-hero-title animate-up delay-1">News &amp; Events</h1>
+          <h1 className="page-hero-title animate-up delay-1">Update News</h1>
           <p className="page-hero-sub animate-up delay-2">ព័ត៌មានថ្មីៗ និងព្រឹត្តិការណ៍សាលា</p>
         </div>
       </div>

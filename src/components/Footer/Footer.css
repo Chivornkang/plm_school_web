@@ -15,30 +15,42 @@
 
 .footer-brand { display: flex; gap: 1rem; align-items: flex-start; }
 .footer-emblem {
-  width: 44px; height: 44px;
+  /* width: 44px; height: 44px; */
   border-radius: 50%;
   background: var(--gold);
   color: var(--navy);
-  font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   font-weight: 700;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
+.footer-emblem img{
+  /* width: 78px; height: 78px; */
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold) 0%, #a37820 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 0 40px rgba(201,151,42,0.5), 0 0 0 6px rgba(201,151,42,0.15);
+}
 .footer-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif Khmer', serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+
+ 
+}
+.footer-name-km {
+ font-weight: 900;
   font-size: 0.95rem;
   color: var(--gold-light);
   margin-bottom: 2px;
 }
-.footer-name-km {
-  font-family: 'Noto Serif Khmer', serif;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
 .footer-desc {
-  font-size: 0.78rem;
+  font-size: 0.6rem;
   color: var(--text-dim);
   line-height: 1.6;
   max-width: 260px;
@@ -46,7 +58,6 @@
 
 .footer-links h4,
 .footer-contact h4 {
-  font-family: 'Playfair Display', serif;
   font-size: 0.85rem;
   color: var(--gold);
   margin-bottom: 1rem;
@@ -82,13 +93,33 @@
   line-height: 1.5;
 }
 
+
+.school-management{
+  justify-self: center;
+   /* text-align: center; */
+
+}
+.school-management h4{
+  text-align: center;
+}
+.footer-contact-members{
+  display: flex;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+}
+.footer-contact-members p {
+  font-size: 0.7rem;
+  color: var(--gold-light);
+}
 /* Bottom bar */
 .footer-bottom {
   border-top: 1px solid rgba(201,151,42,0.1);
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 .footer-bottom-inner {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
