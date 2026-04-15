@@ -2,7 +2,7 @@
 // Central data source for all class pages.
 // Schedule: Mon–Sat per grade (6 days).
 // Monthly results: Jan–Mar with full student list + top 3.
-
+Students
 import chivornAvatar from "../../assets/teachers/chivorn.png";
 
 
